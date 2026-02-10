@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Paket Wisata - Aksara Wisata</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <header class="navbar">
+        <div class="container flex-nav">
+            <a href="index.html" class="logo">Aksara<span>Wisata</span></a>
+            <a href="index.html" class="btn-back">&larr; Kembali ke Artikel</a>
+        </div>
+    </header>
+
+    <main class="container py-5">
+        <header class="catalog-intro">
+            <h2>Koleksi Paket Wisata Pilihan</h2>
+            <p>Temukan pengalaman yang dirancang khusus untuk kenyamanan Anda.</p>
+        </header>
+
+        <div class="filter-bar">
+            <input type="text" id="searchInput" placeholder="Cari destinasi...">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="pantai">Pantai</button>
+                <button class="filter-btn" data-filter="alam">Alam</button>
+                <button class="filter-btn" data-filter="budaya">Budaya</button>
+            </div>
+        </div>
+
+        <div class="grid-container" id="packageGrid">
+            <div class="package-card" data-category="pantai">
+                <div class="badge-promo">Terpopuler</div>
+                <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4" alt="Bali">
+                <div class="card-content">
+                    <h3>Premium Bali Escape</h3>
+                    <p>4H 3M • Hotel *5 • Privat Dinner</p>
+                    <div class="price">Rp3.500.000</div>
+                    <button class="btn-wa" onclick="pesanPaket('Bali Premium')">Pesan via WhatsApp</button>
+                </div>
+            </div>
+
+            <div class="package-card" data-category="alam">
+                <img src="https://images.unsplash.com/photo-1588665555327-a67c73b3cc23" alt="Bromo">
+                <div class="card-content">
+                    <h3>Midnight Bromo Sunrise</h3>
+                    <p>2H 1M • Jeep Adventure • Lokal Guide</p>
+                    <div class="price">Rp1.250.000</div>
+                    <button class="btn-wa" onclick="pesanPaket('Bromo Sunrise')">Pesan via WhatsApp</button>
+                </div>
+            </div>
+
+            <div class="package-card" data-category="alam">
+                <img src="https://images.unsplash.com/photo-1588665555327-a67c73b3cc23" alt="Bromo">
+                <div class="card-content">
+                    <h3>One Day Tour Bandung</h3>
+                    <p>1D • Sejarah • Lokal Guide</p>
+                    <div class="price">Rp1.250.000</div>
+                    <button class="btn-wa" onclick="pesanPaket('One Day Tour Bandung')">Pesan via WhatsApp</button>
+                </div>
+            </div>
+
+            <div class="package-card" data-category="budaya">
+                <img src="https://images.unsplash.com/photo-1584810359583-96fc3448beaa" alt="Jogja">
+                <div class="card-content">
+                    <h3>Heritage Yogyakarta</h3>
+                    <p>3H 2M • Wisata Candi • Kelas Membatik</p>
+                    <div class="price">Rp1.900.000</div>
+                    <button class="btn-wa" onclick="pesanPaket('Jogja Heritage')">Pesan via WhatsApp</button>
+                </div>
+            </div>
+        </div>
+
+    
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
